@@ -1,6 +1,5 @@
 import time
 import webbrowser
-
 count  = 1
 while (count==1):
     print("Current Time: "+time.ctime())
