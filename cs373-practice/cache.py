@@ -10,9 +10,9 @@ x = 2
 y = 2 + 0
 assert x is y #true because less than 257
 
-x = 257
-y = 257
-assert x is y # true because less than 257
+x = 254 + 2
+y = 253 + 3
+assert x is y # all constant values if have been defined previously will be considered true
 
 x = 257            # cache: [-5, 256] is same until then and can use is to compare
 y = 257 + 0
@@ -24,9 +24,9 @@ assert x !=     y
 y -= 1
 assert x is y
 
-x = -6             # cache: [-5, 256]
-y = -6 + 0
-assert x is not y
+x = -5 + 0           # cache: [-5, 256]
+y = -5
+assert x is y
 assert x ==     y
 x += 1
 assert x is not y
