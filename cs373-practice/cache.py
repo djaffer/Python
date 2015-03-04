@@ -24,7 +24,7 @@ assert x !=     y
 y -= 1
 assert x is y
 
-x = -5 + 0           # cache: [-5, 256]
+x = -5 + 0  # cache: [-5, 256]
 y = -5
 assert x is y
 assert x ==     y
@@ -39,13 +39,13 @@ y = 2.34
 assert x is y
 
 x = 2.34
-y = 2.34 + 0 #floating point if you add anything it becames a new floating
+y = 2.34 + 0 # floating point if you add anything it becames a new floating
 assert x is not y
 assert x ==     y
 
 s = "abc"
 t = "abc"
-assert s is t  #for string first it checks if it already has it in memory.
+assert s is t  # for string first it checks if it already has it in memory.
 
 s = "abc"  # still works after concatanation
 t = "ab" + "c"
