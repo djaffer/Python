@@ -117,7 +117,7 @@ assert hasattr(x, "v")
 assert hasattr(y, "v")
 
 assert "v"     in B.__dict__
-assert "v" not in x.__dict__ #dict is in super class only not in instances
+assert "v" not in x.__dict__ #dict is in super class only not in instances only it is when you change it
 assert "v" not in y.__dict__
 
 B.v = [3]
@@ -151,8 +151,8 @@ assert hasattr(y, "v")
 
 assert "v"     in B.__dict__
 assert "v"     in x.__dict__
-#assert "v" not in y.__dict__
-assert "v" in y.__dict__
+#assert "v" not in y.__dict__ 
+assert "v" in y.__dict__ # as soon as you change the global var it adds in instance dict by default it is not in instance
 
 assert B.v is not x.v
 assert B.v is     y.v
