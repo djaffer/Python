@@ -39,7 +39,7 @@ print("A g1: ",A().g3)
 print("Ag1 is xg3: ",A().g3 is x.g3)
 f = A()
 print("different class calling g3",f.g3)#variable is modified and reflected in anty new class 
-del A.__g2__
+del A.__g2
 print("*********************************************************************************")
 
 
