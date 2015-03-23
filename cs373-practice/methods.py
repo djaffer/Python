@@ -31,19 +31,14 @@ class A :
         A.cm()
         self.cm()      # misleading
 
-A.cm()# static methods could directly be called in the function
-
-A().im() #alt way to call im
-print(A()._A__iv)
-A().im() #alt way to call im
-print(A()._A__iv)
+A.cm()
 #A.im() # TypeError: unbound method im() must be called with A instance as first argument (got nothing instead)
-print(A._A__cv)
+
 x = A()
 x.cm()   # misleading
-# #A.cm(x) # TypeError: cm() takes 0 positional arguments but 1 was given
+#A.cm(x) # TypeError: cm() takes 0 positional arguments but 1 was given
 
-# x.im()
-# A.im(x) # methods are really just functions
+x.im()
+A.im(x) # methods are really just functions
 
 print("Done.")
