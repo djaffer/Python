@@ -1,2 +1,3 @@
 heroku\break-free-app\venv
 *.pyc
+cs373-practice\__pycache__
